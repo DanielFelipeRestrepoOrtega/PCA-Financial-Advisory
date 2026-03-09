@@ -4,35 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="IMG/FAVIcon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
      <header>
-        <img src="" alt="Logo">
-        <h1>Contactanos</h1>
+        <img src="IMG/logo_pca_mejorado (1).png" alt="Logo" width="400px" height="200px">
+        
         <nav>
             <a href="index.html">Inicio</a>
             <a href="somos.html">Quines Somos</a>
             <a href="servicios.html">Servicios<a>
             <a href="mision.html">Mision y vision</a>
-            <a href="contacto.html">Contactanos</a>
         </nav>
     </header>
-    
-    <footer>
-        <img src="" alt="">
+    <div class="contacto">
 
-        <div>
-            <a href="">Contactanos</a>
-            <p></p>
+    <h1 class="contacto_titulo">Contáctanos</h1>
+
+    <p class="contacto_intro">
+        En PCA Financial Advisory estamos disponibles para atender sus consultas y brindar asesoría profesional. 
+        Contáctenos y con gusto le acompañaremos en el fortalecimiento financiero de su organización.
+    </p>
+
+    <div class="contacto_contenedor">
+
+        <!-- INFORMACION -->
+        <div class="contacto_info">
+
+            <h2 class="contacto_subtitulo">Información de contacto</h2>
+
+            <div class="contacto_item">
+                <h3>Dirección</h3>
+                <p>Av. 0 #12-45, Barrio Caobos<br>
+                Cúcuta, Norte de Santander, Colombia</p>
+            </div>
+
+            <div class="contacto_item">
+                <h3>Teléfono</h3>
+                <p>+57 300 000 0000</p>
+            </div>
+
+            <div class="contacto_item">
+                <h3>Correo electrónico</h3>
+                <p>contacto@pcafinancial.com</p>
+            </div>
+
+            <div class="contacto_item">
+                <h3>Horario de atención</h3>
+                <p>Lunes a Viernes<br>8:00 AM - 6:00 PM</p>
+            </div>
+
         </div>
 
+        <!-- FORMULARIO -->
+        <div class="contacto_form">
+
+            <form class="form_contacto">
+
+                <h3 class="form_titulo">Envíenos un mensaje</h3>
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre completo" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="Ingrese su correo electrónico" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Ingrese su número de teléfono">
+
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" placeholder="Nombre de la empresa">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." required></textarea>
+
+                <button type="submit" class="form_boton">Enviar mensaje</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+    
+   <footer>
+        <img src="IMG/esccudo.png" alt="" width="400px" height="300px">
         <div>
             <h2>Ubicación</h2>
             <p>Av. 0 #12-45, Barrio Caobos
 Cúcuta, Norte de Santander, Colombia</p>
         </div>
-        <p>© 2026 PCA Financial Advisory. Todos los derechos reservados.
-Diseño y desarrollo web por Daniel Restrepo, Ingeniero de Sistemas, junto al equipo de la firma.</p>
+         <div class="redes_sociales">
+                <img src="img/whatsapp-glyph-black-logo-svgrepo-com.png"  width="50px"  alt="WhatsApp">
+                <img src="img/facebook-svgrepo-com.png" width="50px" alt="Facebook">
+                <img src="img/instagram-167-svgrepo-com.png" width="50px" alt="instagram">
+            </div>
+
+        <div>
+             <p>© 2026 PCA Financial Advisory. Todos los derechos reservados.</p>
+        </div>
+       
         
         
     </footer> 

@@ -1,0 +1,600 @@
+/* Reset básico */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Colores del sitio */
+:root{
+    --dorado:#D4AF37;
+    --negro:#0D0D0D;
+    --gris:#5A5A5A;
+    --blanco:#ffffff;
+}
+.h1principal{
+    color: var(--dorado);
+}
+
+/* BODY */
+body{
+    background-color: var(--blanco);
+    color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header{
+    background-color: var(--negro);
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:20px 60px;
+}
+
+header img{
+    width:250px;
+    height:auto;
+}
+
+header h1{
+    color:var(--dorado);
+    font-size:22px;
+    margin-left:20px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+    font-size: larger;
+}
+
+nav a:hover{
+    color:var(--dorado);
+}
+
+/* MAIN */
+main{
+    text-align:center;
+    padding:40px 20px;
+    background:#f5f5f5;
+    flex: 1;
+}
+
+main p{
+    font-size:22px;
+    margin-bottom:30px;
+    color:var(--gris);
+}
+
+/* BOTON */
+button{
+    background-color:var(--dorado);
+    color:black;
+    border:none;
+    padding:12px 30px;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+button:hover{
+    background-color:#b8962e;
+}
+
+/* FOOTER */
+footer{
+    background-color:var(--negro);
+    color:white;
+    padding:40px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    gap:30px;
+}
+
+footer h2{
+    color:var(--dorado);
+    margin-bottom:10px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+footer p{
+    max-width:300px;
+}
+
+footer img{
+    max-width:200px;
+}
+
+/* COPYRIGHT */
+footer > p{
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+    color:#ccc;
+}
+.excel{
+    width:140px;
+    animation: flotar 2.5s ease-in-out infinite;
+
+     position: relative;
+    right:-500px;
+    top: 200px ;
+}
+.excel2{
+    width:140px;
+    animation: flotar 2.5s ease-in-out infinite;
+
+     position: relative;
+    right:-1000px;
+    top: -1100px ;
+}
+.imgapoyo{
+     position: relative;
+    left:-450px;
+    top: 50px ;
+    border-radius:20px ;
+}
+.boton{
+    position: relative;
+    bottom: 200px;
+}
+@keyframes flotar{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+.porque-elegirnos{
+    text-align: center;
+    margin-top: -190px;
+    margin-left: 200px;
+}
+
+.porque-elegirnos h2{
+    font-size: 32px;
+    color: #c9a227; /* dorado corporativo */
+    margin-bottom: 30px;
+}
+
+.beneficios{
+    font-size: 20px;
+    color: #333;
+    line-height: 2;
+    font-weight: 500;
+    position: relative;
+    bottom: 300px;
+}
+.redes_sociales{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    filter: brightness(0) invert(1);
+}
+/* SECCION QUIENES SOMOS */
+
+.somoss{
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: #d9d7d7;
+    border-radius: 10px;
+}
+
+/* titulo principal */
+
+.somos_titulo{
+    font-size: 40px;
+    text-align: center;
+    color: #c9a227;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* imagen */
+
+.somos_imagen{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.somos_imagen img{
+    width: 450px;
+    border-radius: 8px;
+}
+
+/* subtitulo */
+
+.somos_subtitulo{
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* texto */
+
+.somos_texto p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+/* SECCION SERVICIOS */
+
+.servicios{
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px;
+}
+
+/* titulo */
+
+.servicios_titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #c9a227;
+    margin-bottom: 50px;
+}
+
+/* contenedor de tarjetas */
+
+.servicios_contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* tarjeta de servicio */
+
+.servicio_card{
+     background-color: #d9d7d7;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* efecto hover */
+
+.servicio_card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* titulo servicio */
+
+.servicio_titulo{
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* imagen */
+
+.servicio_img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* texto */
+
+.servicio_texto{
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+/* SECCION MISION Y VISION */
+
+.misionvision{
+    max-width:1100px;
+    margin:60px auto;
+    padding:40px;
+}
+
+/* titulo */
+
+.misionvision_titulo{
+    text-align:center;
+    font-size:40px;
+    color:#c9a227;
+    margin-bottom:50px;
+}
+
+/* contenedor */
+
+.misionvision_contenedor{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+/* tarjetas */
+
+.misionvision_card{
+    background:#d9d7d7;
+    padding:30px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+/* hover */
+
+.misionvision_card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* subtitulo */
+
+.misionvision_subtitulo{
+    font-size:26px;
+    color:#333;
+    margin-bottom:15px;
+}
+
+/* texto */
+
+.misionvision_texto{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* SECCION CONTACTO */
+
+.contacto{
+    max-width:1200px;
+    margin:60px auto;
+    padding:40px;
+}
+
+/* titulo */
+
+.contacto_titulo{
+    text-align:center;
+    font-size:40px;
+    color:var(--dorado);
+    margin-bottom:20px;
+}
+
+/* introduccion */
+
+.contacto_intro{
+    text-align:center;
+    font-size:18px;
+    color:#555;
+    margin-bottom:50px;
+}
+
+/* contenedor */
+
+.contacto_contenedor{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+/* informacion */
+
+.contacto_subtitulo{
+    color:#333;
+    margin-bottom:20px;
+}
+
+.contacto_item{
+    margin-bottom:20px;
+}
+
+.contacto_item h3{
+    color:var(--dorado);
+    margin-bottom:5px;
+}
+
+.contacto_item p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* formulario */
+
+.form_contacto{
+    background:#d9d7d7;
+    padding:30px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+}
+
+.form_titulo{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* inputs */
+
+.form_contacto input,
+.form_contacto textarea{
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:14px;
+}
+
+/* boton */
+
+.form_boton{
+    background:var(--dorado);
+    border:none;
+    padding:12px;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.form_boton:hover{
+    background:#b8962e;
+}
+@media (max-width:1024px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.servicios_contenedor{
+    grid-template-columns:1fr;
+}
+
+.misionvision_contenedor{
+    grid-template-columns:1fr;
+}
+
+.contacto_contenedor{
+    grid-template-columns:1fr;
+}
+
+.somos_imagen img{
+    width:100%;
+    max-width:400px;
+}
+
+.servicio_img{
+    width:200px;
+}
+
+}
+@media (max-width:768px){
+
+header{
+    padding:20px;
+}
+
+header img{
+    width:180px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav a{
+    font-size:16px;
+}
+
+main p{
+    font-size:18px;
+}
+
+/* titulos */
+
+.somos_titulo,
+.servicios_titulo,
+.misionvision_titulo,
+.contacto_titulo{
+    font-size:30px;
+}
+
+/* padding de secciones */
+
+.somoss,
+.servicios,
+.misionvision,
+.contacto{
+    padding:25px;
+    margin:40px auto;
+}
+
+/* imagen quienes somos */
+
+.somos_imagen img{
+    width:100%;
+}
+
+/* iconos servicios */
+
+.servicio_img{
+    width:120px;
+}
+
+/* formulario */
+
+.form_contacto{
+    padding:20px;
+}
+
+}
+@media (max-width:480px){
+
+nav{
+    gap:10px;
+}
+
+nav a{
+    font-size:14px;
+}
+
+.contacto_intro{
+    font-size:16px;
+}
+
+.misionvision_texto,
+.somos_texto p{
+    font-size:16px;
+}
+
+footer{
+    flex-direction:column;
+    text-align:center;
+}
+
+footer img{
+    max-width:150px;
+}
+
+.redes_sociales{
+    gap:20px;
+}
+
+}
