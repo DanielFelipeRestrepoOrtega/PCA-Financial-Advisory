@@ -602,3 +602,57 @@ footer img{
 }
 
 }
+/* --- BOTÓN HAMBURGUESA --- */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Por encima de todo */
+}
+
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s
+}
+
+/* --- NAVEGACIÓN MÓVIL (Oculta por defecto) --- */
+@media (max-width: 767px) {
+    nav {
+        position: fixed;
+        top: -100%; /* Escondido arriba */
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        z-index: 1000;
+    }
+
+    /* Cuando el menú tenga la clase 'active', bajará */
+    nav.active {
+        top: 0;
+    }
+}
+
+/* --- MODO ESCRITORIO --- */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none; /* Desaparece el botón en PC */
+    }
+
+    nav {
+        position: static;
+        height: auto;
+        flex-direction: row;
+        background: none;
+    }
+}
